@@ -1,0 +1,42 @@
+$breakpoints: (
+  "xxl": 1920px,
+  "xl": 1440px,
+  "lg": 1280px,
+  "md": 992px,
+  "sm": 768px,
+  "xs": 480px
+) !default;
+
+:root {
+  // Colors
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey: #999;
+  --color-blue: #39f;
+  --color-deep-burnt-sienna: #660000;
+  --color-charcoal: #101920;
+  --color-yellow: #ffe715;
+  --color-back-brown: #201e21;
+  --color-blue-royal: #234e70;
+  --color-dark-purple: #301934;
+  --color-lilac: #aa98a9;
+  --color-iris: #5d3fd3;
+  --color-beige: #f5f5dc;
+  --color-gold: #ffd700;
+
+  // Fonts
+  --font-sans-serif: var(--font-roboto-main), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, "Cascadia Mono", "Segoe UI Mono", SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  // Body base
+  --base-background-color: var(--color-white);
+  --base-font-family: var(--font-sans-serif);
+  --base-font-size: 16px;
+  --base-line-height: 1.2;
+  --base-text-color: var(--color-black);
+  --base-min-width: 320px;
+}

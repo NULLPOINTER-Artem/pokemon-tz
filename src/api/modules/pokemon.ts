@@ -1,6 +1,6 @@
 import { GenericAbortSignal } from 'axios';
 import axios from '../index';
-import { PokemonsResponse } from '../types';
+import { PokemonsResponse, SinglePokemon } from '../types';
 
 export type GetPokemonsParamsType = {
   limit: number,
@@ -15,6 +15,27 @@ export const getPokemons = async ({ limit, offset, signal }: GetPokemonsParamsTy
     });
 
     return response;
+  } catch (error: any) {
+    console.error(error);
+  }
+};
+
+export type GetPokemonByNameParamsType = {
+  name: string | undefined,
+  signal?: GenericAbortSignal
+}
+
+export const getPokemonByName = async ({ name, signal }: GetPokemonByNameParamsType) => {
+  try {
+    if (name) {
+      const response = await axios.get<SinglePokemon>(`/pokemon/${name}`, {
+        signal,
+      });
+
+      return response;
+    }
+
+    throw new Error(`getPokemonByName - the parameter 'name' have to be a string, but got ${typeof name}`)
   } catch (error: any) {
     console.error(error);
   }

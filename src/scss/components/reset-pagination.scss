@@ -1,0 +1,8 @@
+.material-pagination {
+  .MuiPaginationItem-root {
+    &.Mui-selected {
+      background-color: var(--color-charcoal);
+      color: var(--color-yellow);
+    }
+  }
+}

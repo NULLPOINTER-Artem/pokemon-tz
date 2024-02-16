@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--base-text-color);
+  background: var(--base-background-color);
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  font-weight: 400;
+  min-width: var(--base-min-width);
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  min-height: 1px;
+  height: auto;
+  vertical-align: middle; // mb in text
+  font-style: italic; // alt attr
+  shape-margin: 1rem; // && shape-outside + float
+  background-repeat: no-repeat; // because we use cover size
+  background-size: cover;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: var(--base-text-color);
+
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+//* Remove the "clear" btn in search input
+input[type="search"] {
+  /* clears the ‘X’ from Internet Explorer */
+  &::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  &::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  /* clears the ‘X’ from Chrome */
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+select {
+  border-radius: 0;
+}
+
+textarea {
+  resize: vertical;
+  vertical-align: top;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

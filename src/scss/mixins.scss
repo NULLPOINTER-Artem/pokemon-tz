@@ -1,0 +1,24 @@
+/*
+  Example: @include media('sm') {} || @include media('xs') {}
+*/
+@mixin media($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $width: map-get($breakpoints, $breakpoint);
+    $max-width: get-max($breakpoints);
+
+    @media screen and (max-width: $width) {
+      @content;
+    }
+
+    @if $width == $max-width {
+      @media screen and (min-width: $width) {
+        @content;
+      }
+    }
+  }
+
+  // Error handling
+  @else {
+    @error "The breakpoint is not defined. Please check out 'scss/foundation/variables'.";
+  }
+}
