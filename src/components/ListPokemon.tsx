@@ -14,7 +14,8 @@ export default function ListPokemon() {
   let [searchParams, setSearchParams] = useSearchParams();
 
   const limit: number = 20;
-  const [page, setPage] = useState<number>(Number(searchParams.get('page')) ?? 1);
+  const currPage = Number(searchParams.get('page'));
+  const [page, setPage] = useState<number>(currPage && currPage > 0 ? currPage : 1);
   const [countPages, setCountPages] = useState<number>(1);
   const [listPokemon, setListPokemon] = useState<Pokemon[]>([]);
 
