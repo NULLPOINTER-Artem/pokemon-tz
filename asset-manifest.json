@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/pokemon-tz/static/css/main.9740d9ec.css",
-    "main.js": "/pokemon-tz/static/js/main.f52700a5.js",
-    "static/js/453.9d26aa06.chunk.js": "/pokemon-tz/static/js/453.9d26aa06.chunk.js",
-    "static/media/logo.svg": "/pokemon-tz/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/pokemon-tz/static/css/main.d7e3c72d.css",
+    "main.js": "/pokemon-tz/static/js/main.fd5f9133.js",
+    "static/js/112.3383fec2.chunk.js": "/pokemon-tz/static/js/112.3383fec2.chunk.js",
+    "static/js/244.b3e02edf.chunk.js": "/pokemon-tz/static/js/244.b3e02edf.chunk.js",
+    "static/js/460.017a19b9.chunk.js": "/pokemon-tz/static/js/460.017a19b9.chunk.js",
+    "static/js/510.f1653a8f.chunk.js": "/pokemon-tz/static/js/510.f1653a8f.chunk.js",
     "index.html": "/pokemon-tz/index.html",
-    "main.9740d9ec.css.map": "/pokemon-tz/static/css/main.9740d9ec.css.map",
-    "main.f52700a5.js.map": "/pokemon-tz/static/js/main.f52700a5.js.map",
-    "453.9d26aa06.chunk.js.map": "/pokemon-tz/static/js/453.9d26aa06.chunk.js.map"
+    "main.d7e3c72d.css.map": "/pokemon-tz/static/css/main.d7e3c72d.css.map",
+    "main.fd5f9133.js.map": "/pokemon-tz/static/js/main.fd5f9133.js.map",
+    "112.3383fec2.chunk.js.map": "/pokemon-tz/static/js/112.3383fec2.chunk.js.map",
+    "244.b3e02edf.chunk.js.map": "/pokemon-tz/static/js/244.b3e02edf.chunk.js.map",
+    "460.017a19b9.chunk.js.map": "/pokemon-tz/static/js/460.017a19b9.chunk.js.map",
+    "510.f1653a8f.chunk.js.map": "/pokemon-tz/static/js/510.f1653a8f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9740d9ec.css",
-    "static/js/main.f52700a5.js"
+    "static/css/main.d7e3c72d.css",
+    "static/js/main.fd5f9133.js"
   ]
 }
