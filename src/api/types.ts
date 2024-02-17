@@ -116,3 +116,12 @@ export type SinglePokemon = {
     }
   }[]
 }
+
+export type PokemonTypeResponse = {
+  id: number,
+  name: string,
+  pokemon: {
+    slot: number,
+    pokemon: Pokemon
+  }[]
+};

@@ -1,0 +1,123 @@
+.pokemon-page {
+  padding: 40px 15px;
+  position: relative;
+}
+
+.pokemon-page--loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+
+.loading-icon {
+  width: 120px;
+  height: 120px;
+  color: var(--color-charcoal);
+
+  animation: spin 1s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pokemon-page__btn-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+
+  .pokemon-page__btn-back-icon {
+    width: 44px;
+    height: 44px;
+    color: var(--color-charcoal);
+  }
+}
+
+.pokemon-page__image-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .pokemon-page__img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .pokemon-page__caption {
+    text-align: center;
+    margin-top: 15px;
+
+    font-size: 32px;
+    text-transform: capitalize;
+    vertical-align: text-bottom;
+
+    .pokemon-page__caption-icon {
+      vertical-align: text-bottom;
+      margin-left: 10px;
+    }
+  }
+}
+
+.pokemon-page__block-list {
+  width: min(100%, 1000px);
+  margin: 30px auto 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .pokemon-page__block-heading {
+    text-align: left;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .pokemon-page__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .pokemon-page__item {
+      font-size: 24px;
+      border: 1px solid var(--color-charcoal);
+      border-radius: 10px;
+      padding: 10px;
+
+      &.pokemon-page__item--selective {
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .pokemon-page__list--empty {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pokemon-page {
+    padding: 60px 15px;
+  }
+}

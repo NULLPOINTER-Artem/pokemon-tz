@@ -9,10 +9,34 @@
   gap: 10px;
 }
 
+.list--empty {
+  font-size: 32px;
+  text-align: center;
+  color: var(--color-charcoal);
+}
+
+.search-input {
+  margin-top: -16px;
+}
+
 .pagination {
   display: flex;
   align-items: center;
   justify-content: center;
 
   margin-top: 40px;
+}
+
+.select-item {
+  text-transform: capitalize;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+
+  padding-inline: 15px;
+  margin-bottom: 30px;
 }
