@@ -2,6 +2,9 @@
 @import "./scss/reset";
 @import "./scss/mixins";
 
+/* Components */
+@import "./scss/components/notify";
+
 /* Reset Components */
 @import "./scss/components/reset-pagination";
 @import "./scss/components/reset-select";

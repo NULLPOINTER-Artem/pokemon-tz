@@ -1,0 +1,21 @@
+.not-found-modal {
+  :global(.MuiPaper-root) {
+    background-color: var(--color-charcoal);
+    color: var(--color-beige);
+    border-radius: 20px;
+
+    :global(.MuiDialogContent-root) {
+      p {
+        color: var(--color-beige);
+      }
+    }
+
+    :global(.MuiDialogTitle-root) {
+      text-align: center;
+    }
+
+    :global(.MuiButtonBase-root) {
+      color: var(--color-yellow);
+    }
+  }
+}

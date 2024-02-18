@@ -1,12 +1,11 @@
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
-import { FoundPokemons } from "./slices/foundPokemons";
+import { configureStore } from "@reduxjs/toolkit";
+import notifyReducer from "./slices/notify";
 
 export const store = configureStore({
-  reducer: combineReducers([
-    FoundPokemons.reducer
-  ])
+  reducer: {
+    notify: notifyReducer,
+  },
 });
 
-export const useAppDispatch: () => typeof store.dispatch = useDispatch;
-export const useAppSelector: TypedUseSelectorHook<ReturnType<typeof store.getState>> = useSelector;
+export type AppDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof store.getState>;
