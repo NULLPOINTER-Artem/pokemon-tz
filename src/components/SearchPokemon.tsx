@@ -19,7 +19,7 @@ export default function SearchPokemon() {
 
   const fetchPokemon = async (controller: AbortController) => {
     const response = await getPokemonByName({
-      name: debouncedSearch,
+      name: debouncedSearch.toLowerCase(),
       signal: controller.signal
     });
 
